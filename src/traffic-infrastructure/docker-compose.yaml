@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  dtc-rabbitmq:
+    image: rabbitmq:3-management-alpine
+    ports:
+      - '5673:5672'
+      - '15673:15672'
+  dtc-maildev:
+    image: maildev/maildev:latest
+    ports:
+      - '4000:80'
+      - '4025:25'
+  dtc-mosquitto:
+    image: dtc-mosquitto:1.0
+    build:
+      context: .
+    ports:
+      - '9001:9001'
+      - '1883:1883'
+     

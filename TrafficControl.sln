@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{64CE5939-0D3A-49B4-8588-2D6BEE75D5E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{824638AE-92E6-463C-9788-A38A96406891}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FineCollectionService", "src\Services\FineCollectionService\FineCollectionService.csproj", "{78DA3854-692C-4140-82CB-6E0E5BD8DC4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrafficControlService", "src\Services\TrafficControlService\TrafficControlService.csproj", "{F9A3B204-E353-47DA-9D60-C9ABF660B1CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleRegistrationService", "src\Services\VehicleRegistrationService\VehicleRegistrationService.csproj", "{87BAD0F6-62A0-47B3-803F-14C086CD5ECD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CameraSimulation", "src\Services\CameraSimulation\CameraSimulation.csproj", "{44EB3F29-DA77-4D67-AD2E-8EB5D84C75FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D31FC9C0-0E13-4516-8A9D-AA29818F705F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dapr", "dapr", "{6B05A581-01B6-45DA-BD4C-0A3E17E8DB80}"
+	ProjectSection(SolutionItems) = preProject
+		src\dapr\config.yaml = src\dapr\config.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{AE5D97C7-C50F-4E30-8F82-AFC58A18CB1B}"
+	ProjectSection(SolutionItems) = preProject
+		src\dapr\components\email.yaml = src\dapr\components\email.yaml
+		src\dapr\components\entrycam.yaml = src\dapr\components\entrycam.yaml
+		src\dapr\components\exitcam.yaml = src\dapr\components\exitcam.yaml
+		src\dapr\components\pubsub.yaml = src\dapr\components\pubsub.yaml
+		src\dapr\components\secrets-file.yaml = src\dapr\components\secrets-file.yaml
+		src\dapr\components\secrets.json = src\dapr\components\secrets.json
+		src\dapr\components\statestore.yaml = src\dapr\components\statestore.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "traffic-infrastructure", "traffic-infrastructure", "{AAB6B082-79AF-40B4-8FE2-C16E4E4B3B14}"
+	ProjectSection(SolutionItems) = preProject
+		src\traffic-infrastructure\docker-compose.yaml = src\traffic-infrastructure\docker-compose.yaml
+		src\traffic-infrastructure\Dockerfile = src\traffic-infrastructure\Dockerfile
+		src\traffic-infrastructure\mosquitto.conf = src\traffic-infrastructure\mosquitto.conf
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78DA3854-692C-4140-82CB-6E0E5BD8DC4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78DA3854-692C-4140-82CB-6E0E5BD8DC4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78DA3854-692C-4140-82CB-6E0E5BD8DC4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78DA3854-692C-4140-82CB-6E0E5BD8DC4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A3B204-E353-47DA-9D60-C9ABF660B1CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A3B204-E353-47DA-9D60-C9ABF660B1CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A3B204-E353-47DA-9D60-C9ABF660B1CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A3B204-E353-47DA-9D60-C9ABF660B1CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87BAD0F6-62A0-47B3-803F-14C086CD5ECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87BAD0F6-62A0-47B3-803F-14C086CD5ECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87BAD0F6-62A0-47B3-803F-14C086CD5ECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87BAD0F6-62A0-47B3-803F-14C086CD5ECD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44EB3F29-DA77-4D67-AD2E-8EB5D84C75FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44EB3F29-DA77-4D67-AD2E-8EB5D84C75FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44EB3F29-DA77-4D67-AD2E-8EB5D84C75FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44EB3F29-DA77-4D67-AD2E-8EB5D84C75FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{824638AE-92E6-463C-9788-A38A96406891} = {64CE5939-0D3A-49B4-8588-2D6BEE75D5E2}
+		{78DA3854-692C-4140-82CB-6E0E5BD8DC4A} = {824638AE-92E6-463C-9788-A38A96406891}
+		{F9A3B204-E353-47DA-9D60-C9ABF660B1CF} = {824638AE-92E6-463C-9788-A38A96406891}
+		{87BAD0F6-62A0-47B3-803F-14C086CD5ECD} = {824638AE-92E6-463C-9788-A38A96406891}
+		{44EB3F29-DA77-4D67-AD2E-8EB5D84C75FB} = {824638AE-92E6-463C-9788-A38A96406891}
+		{6B05A581-01B6-45DA-BD4C-0A3E17E8DB80} = {D31FC9C0-0E13-4516-8A9D-AA29818F705F}
+		{AE5D97C7-C50F-4E30-8F82-AFC58A18CB1B} = {6B05A581-01B6-45DA-BD4C-0A3E17E8DB80}
+		{AAB6B082-79AF-40B4-8FE2-C16E4E4B3B14} = {D31FC9C0-0E13-4516-8A9D-AA29818F705F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07A00761-74FB-4442-ACE1-0BAAA74207F0}
+	EndGlobalSection
+EndGlobal
