@@ -73,8 +73,8 @@ namespace FineCollectionService.Controllers
             var body = EmailUtils.CreateEmailBody(speedingViolation, vehicleInfo, fineString);
             var metadata = new Dictionary<string, string>
             {
-                ["emailfrom"] = "noreply@cfca.gov",
-                ["emailto"] = vehicleInfo.OwnerEmail,
+                ["emailFrom"] = "noreply@cfca.gov",
+                ["emailTo"] = vehicleInfo.OwnerEmail,
                 ["subject"] = $"Speeding violation on the {speedingViolation.RoadId}"
             };
             await _daprClient.InvokeBindingAsync("sendmail", "create", body, metadata);
