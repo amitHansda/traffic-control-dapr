@@ -10,8 +10,4 @@
 		<PackageReference Include="Dapr.Extensions.Configuration" Version="1.5.0" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="Helpers\" />
-	</ItemGroup>
-
 </Project>
