@@ -40,6 +40,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "traffic-infrastructure", "t
 		src\traffic-infrastructure\mosquitto.conf = src\traffic-infrastructure\mosquitto.conf
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualSimulation", "src\Services\VisualSimulation\VisualSimulation.csproj", "{4E586BDB-45AF-44F3-8C3E-98E949BDEECC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,10 @@ Global
 		{44EB3F29-DA77-4D67-AD2E-8EB5D84C75FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44EB3F29-DA77-4D67-AD2E-8EB5D84C75FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44EB3F29-DA77-4D67-AD2E-8EB5D84C75FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E586BDB-45AF-44F3-8C3E-98E949BDEECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E586BDB-45AF-44F3-8C3E-98E949BDEECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E586BDB-45AF-44F3-8C3E-98E949BDEECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E586BDB-45AF-44F3-8C3E-98E949BDEECC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +81,7 @@ Global
 		{6B05A581-01B6-45DA-BD4C-0A3E17E8DB80} = {D31FC9C0-0E13-4516-8A9D-AA29818F705F}
 		{AE5D97C7-C50F-4E30-8F82-AFC58A18CB1B} = {6B05A581-01B6-45DA-BD4C-0A3E17E8DB80}
 		{AAB6B082-79AF-40B4-8FE2-C16E4E4B3B14} = {D31FC9C0-0E13-4516-8A9D-AA29818F705F}
+		{4E586BDB-45AF-44F3-8C3E-98E949BDEECC} = {824638AE-92E6-463C-9788-A38A96406891}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {07A00761-74FB-4442-ACE1-0BAAA74207F0}
